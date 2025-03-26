@@ -102,7 +102,7 @@ alias pakun="flatpak uninstall"
 alias pakse="flatpak search"
 alias pakrm="flatpak remove --unused"
 alias gamesh="bash gameshell.sh"
-alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 ################################################################################
 # Load Powerlevel10k Configuration (Prompt Customization)
