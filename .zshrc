@@ -68,7 +68,11 @@ zi light zdharma-continuum/fast-syntax-highlighting
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git --exclude node_modules'
+export FZF_DEFAULT_COMMAND="
+	fd --type f --hidden
+	--exclude .git 
+	--exclude node_modules"
+
 export FZF_DEFAULT_OPTS='--style=full'
 
 # To make fzf-tab follow FZF_DEFAULT_OPTS.
@@ -103,6 +107,7 @@ alias pakse="flatpak search"
 alias pakrm="flatpak remove --unused"
 alias gamesh="bash gameshell.sh"
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias dload='aria2c -x 8 -s 8 -c -d ~/Downloads'
 
 ################################################################################
 # Load Powerlevel10k Configuration (Prompt Customization)
